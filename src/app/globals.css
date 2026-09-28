@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #d4af37;
+    --gold-light: #f3e5ab;
+    --gold-muted: #c5a059;
+    --bg-noir: #0e0d0c;
+    --surface-luxury: #171513;
+    --parchment-cream: #f8f6f0;
+  }
+
+  body {
+    background-color: var(--bg-noir);
+    color: #e6e2dc;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+}
+
+/* #31 Magazine-Style Editorial Aesthetics */
+.luxury-gold-border {
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #aa771c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.editorial-card {
+  background-color: #151311;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.editorial-card:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  transform: translateY(-2px);
+}
